@@ -70,32 +70,6 @@ combate/
 | **D** | Mover derecha |
 | **Q** | Salir del juego |
 
----
-
-## 🛠️ COMPILACIÓN
-
-### Con Makefile (Recomendado)
-```bash
-make              # Compilar
-make run          # Compilar y ejecutar
-make clean        # Limpiar archivos objeto
-make rebuild      # Limpiar y recompilar
-```
-
-### Compilación Manual (Windows)
-```bash
-gcc -Wall -Wextra -std=c99 -o chiguire_quest.exe main.c game.c player.c enemy.c items.c map.c -lm
-chiguire_quest.exe
-```
-
-### Compilación Manual (Linux/Mac)
-```bash
-gcc -Wall -Wextra -std=c99 -o chiguire_quest main.c game.c player.c enemy.c items.c map.c -lm
-./chiguire_quest
-```
-
----
-
 ## 📊 FLUJO DE JUEGO
 
 ```
@@ -227,20 +201,8 @@ y += direction * speed;
 
 ---
 
-## 🐛 DEBUG
-
-Para compilar con símbolos de debug:
-```bash
-gcc -Wall -Wextra -std=c99 -g -o chiguire_quest main.c game.c player.c enemy.c items.c map.c -lm
-gdb ./chiguire_quest
-```
-
----
-
 ## 📄 LICENCIA
 
 Proyecto estudiantil - Uso libre para fines educativos.
 
 ---
-
-**¡Diviértete jugando CHIGUIRE QUEST!** 🎮✨
